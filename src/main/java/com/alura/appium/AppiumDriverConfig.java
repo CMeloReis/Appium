@@ -9,9 +9,11 @@ import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class App {
+public class AppiumDriverConfig {
 
-    public static void main( String[] args ) throws MalformedURLException {
+    public final AppiumDriver driver;
+
+    public AppiumDriverConfig() throws MalformedURLException {
 
         File apk = new File("C:\\Users\\cmelorei\\OneDrive - everis\\Documentos\\Alura\\projeto-appium\\src\\main\\resources\\alura_esporte.apk");
 
@@ -22,7 +24,8 @@ public class App {
 
         URL urlConexao = new URL("http://127.0.0.1:4723/wd/hub");
 
-        AppiumDriver driver = new AppiumDriver<>(urlConexao, configuracoes);
+        driver = new AppiumDriver<>(urlConexao, configuracoes);
 
     }
 }
+
