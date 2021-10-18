@@ -3,7 +3,6 @@ package com.alura.appium;
 import com.alura.appium.PageObjects.CadastroPageObject;
 import com.alura.appium.PageObjects.LoginPageObject;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileElement;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.NoSuchElementException;
